@@ -14,18 +14,47 @@
   --red-100: #FF2919;
   --red-200: #C22222;
   /* Tamaños y Alturas */
-  --width-global: min(90%, 2000px);
+  --width-global: min(90%, 1440px);
   --height-header: 120px;
   /* Transiciones */
-  --transition: all .25s ease-in-out;
+  --transition: all .1s ease-in-out;
 }
 
 /* Reset CSS */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a, ul, li {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+h1 {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 66px;
+}
+h2 {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
 /* Componentes y Estilos Predeterminados */
 
 .btn-global {
-  padding: 10px 20px;
+  padding: 14px 28px;
   border-radius: 100px;
   cursor: pointer;
   transition: var(--transition);
