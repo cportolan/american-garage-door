@@ -4,22 +4,26 @@ const WhatWeDoCards = [
     {
         title: "Residential",
         description: "Secure your home with expert garage door repairs, lock installations, rekeying, and smart lock upgrades.",
-        image: "/imgs/whatwedo1-1.png"
+        image: "/imgs/whatwedo1-1.png",
+        height: "100%",
     },
     {
         title: "Automotive",
         description: "Locked out or lost your keys?We handle car lockouts, key replacements, and ignition repairs on the spot.",
-        image: "/imgs/whatwedo1-2.png"
+        image: "/imgs/whatwedo1-2.png",
+        height: "75%",
     },
     {
         title: "Commercial",
         description: "Protect your business with high-security lock systems, access control, master key solutions, and rapid support.",
-        image: "/imgs/whatwedo1-3.png"
+        image: "/imgs/whatwedo1-3.png",
+        height: "100%",
     },
     {
         title: "Emergency",
         description: "Fast, reliable emergency lockout services for homes, cars, and businesses—just a call away.",
-        image: "/imgs/whatwedo1-4.png"
+        image: "/imgs/whatwedo1-4.png",
+        height: "75%"
     }
 ]
 
@@ -35,9 +39,9 @@ export default function WhatWeDo() {
                     </div>
                     <div className="whatwedo1-cards">
                         {WhatWeDoCards.map((card, index) => (
-                            <div className="whatwedo1-card" key={index} style={{ backgroundImage: `url(${card.image})` }}>
+                            <div className="whatwedo1-card" key={index} style={{ backgroundImage: `linear-gradient(#1C242A10, #1C242A99), url(${card.image})`, height: card.height }}>
                                 <h3>{card.title}</h3>
-                                <p>{card.description}</p>
+                                <p className="section-paragraph">{card.description}</p>
                             </div>
                         ))}
                     </div>
