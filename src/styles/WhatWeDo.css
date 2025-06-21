@@ -1,6 +1,6 @@
 .whatwedo {
     background-color: var(--white);
-    padding: 120px;
+    padding: 120px 0;
 }
 .whatwedo-container {
     display: flex;

@@ -1,1 +1,73 @@
-/* Estilos Testimonios */
+.testimonios {
+  background-color: var(--white);
+  padding: 100px 0;
+}
+
+.testimonios-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: var(--width-global);
+  margin: auto;
+}
+
+.testimonios-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.testimonios-marquee {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+/* contenedores visibles que ocultan overflow */
+.testimonios-fila1-wrapper,
+.testimonios-fila2-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* contenedor deslizante */
+.testimonios-fila {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  width: max-content;
+}
+
+/* Animaciones */
+.testimonios-fila1 {
+  animation: marquee-left 30s linear infinite;
+}
+
+.testimonios-fila2 {
+  animation: marquee-left-reverse 30s linear infinite;
+}
+
+.testimonios-fila1:hover,
+.testimonios-fila2:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-left-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,35 @@
+.cardtestimonio {
+    width: 400px;
+    border-radius: 15px;
+    border: 1px solid var(--gray-200);
+    padding: 24px;
+}
+.cardtestimonio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    & img {
+        width: 33px;
+        height: 33px;
+    }
+}
+.cardtestimonio-persona {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+
+    & img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    & h3 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.45;
+        color: var(--gray-400);
+    }
+}
