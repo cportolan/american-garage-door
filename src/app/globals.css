@@ -30,6 +30,10 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  position: relative;
+  top: var(--height-header);
+}
 a, ul, li {
   text-decoration: none;
   list-style: none;

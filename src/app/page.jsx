@@ -1,3 +1,4 @@
+import ContactHome from "@/components/ContactHome"
 import Estadisticas from "@/components/Estadisticas"
 import HeroHome from "@/components/HeroHome"
 import Testimonios from "@/components/Testimonios"
@@ -10,6 +11,7 @@ export default function Home() {
 			<WhatWeDo />
 			<Estadisticas />
 			<Testimonios />
+			<ContactHome />
 		</main>
 	)
 }
