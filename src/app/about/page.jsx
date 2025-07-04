@@ -1,5 +1,7 @@
+import AboutHome from "@/components/AboutHome";
+
 export default function About( {} ) {
     return(
-        <h1>About</h1>
+        <AboutHome />
     )
 }
