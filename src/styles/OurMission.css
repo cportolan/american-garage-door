@@ -1,0 +1,22 @@
+.aboutmission {
+    background-color: var(--white);
+    padding: 120px 0;
+}
+.aboutmission-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    width: var(--width-global);
+    margin: auto;
+
+    & img {
+        border-radius: 12px;
+    }
+}
+.aboutmission-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+}

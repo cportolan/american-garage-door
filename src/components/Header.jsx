@@ -5,9 +5,12 @@ import "@/styles/Header.css";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 export default function Header() {
     const pathname = usePathname();
+    const [navbarOpen, setNavbarOpen] = useState(false);
+    const toggleNavbar = () => { setNavbarOpen(!navbarOpen);}
 
     const navItems = [
         { href: "/", label: "Home" }, 
