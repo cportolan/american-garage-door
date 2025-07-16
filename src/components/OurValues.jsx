@@ -44,7 +44,7 @@ export default function OurValues() {
                     <h2>Why Choose <b>Us?</b></h2>
                     <p className="section-paragraph">At American Garage Door & Key LLC, we deliver fast, reliable service with upfront pricing and guaranteed satisfaction. Our licensed and insured team uses trusted products and proven techniques to protect your home, business, or vehicle — all with a focus on quality, integrity, and your peace of mind.</p>
                 </div>
-                <div className="ourvalues-cards">
+                <div className="services-cards_grid6">
                     {ourMissionCards.map((card, index) => (
                         <Tarjeta
                             key={index}

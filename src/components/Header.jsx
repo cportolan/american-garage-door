@@ -10,7 +10,7 @@ import { useState } from "react";
 export default function Header() {
     const pathname = usePathname();
     const [navbarOpen, setNavbarOpen] = useState(false);
-    const toggleNavbar = () => { setNavbarOpen(!navbarOpen);}
+    const toggleNavbar = () => { setNavbarOpen(!navbarOpen); }
 
     const navItems = [
         { href: "/", label: "Home" }, 

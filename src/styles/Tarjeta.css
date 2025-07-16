@@ -2,11 +2,15 @@
     padding: 28px 33px;
     border-radius: 20px;
     background-color: var(--blue-100);
+    width: fit-content;
 }
 .tarjeta-container {
     display: flex;
     align-items: flex-start;
     gap: 21px;
+}
+.tarjeta-container.vertical {
+    flex-direction: column;
 }
 .tarjeta-title {
     display: flex;
