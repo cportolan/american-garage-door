@@ -1,3 +1,4 @@
+import ContactSection from "@/components/ContactSection";
 import HeroServices from "@/components/HeroServices";
 import Tarjeta from "@/components/Tarjeta";
 
@@ -94,61 +95,64 @@ export default function ServicesResidential( {} ) {
                 desc={content.desc}
                 img={content.img}
             />
-            <div className="services-flex">
-                <h2>Lockout & <b>Access Services</b></h2>
-                <div className="services-cards_flex3">
-                    {services1.map((service, index) => (
-                        <Tarjeta
-                            key={index}
-                            title={service.title}
-                            desc={service.desc}
-                            ico={service.img}
-                            orientation={"vertical"}
-                        />
-                    ))}
+            <div className="services-services">
+                <div className="services-flex">
+                    <h2>Lockout & <b>Access Services</b></h2>
+                    <div className="services-cards_flex3">
+                        {services1.map((service, index) => (
+                            <Tarjeta
+                                key={index}
+                                title={service.title}
+                                desc={service.desc}
+                                ico={service.img}
+                                orientation={"vertical"}
+                            />
+                        ))}
+                    </div>
+                </div>
+                <div className="services-flex">
+                    <h2>Lock Repair <b>& Installation</b></h2>
+                    <div className="services-cards_grid4">
+                        {services2.map((service, index) => (
+                            <Tarjeta
+                                key={index}
+                                title={service.title}
+                                desc={service.desc}
+                                ico={service.img}
+                            />
+                        ))}  
+                    </div>
+                </div>
+                <div className="services-flex">
+                    <h2>Home Entry <b>& Window Security</b></h2>
+                    <div className="services-cards_flex3">
+                        {services3.map((service, index) => (
+                            <Tarjeta
+                                key={index}
+                                title={service.title}
+                                desc={service.desc}
+                                ico={service.img}
+                                orientation={"vertical"}
+                            />
+                        ))}
+                    </div>
+                </div>
+                <div className="services-flex">
+                    <h2>Keys & <b>Rekeying Services</b></h2>
+                    <div className="services-cards_flex3">
+                        {services4.map((service, index) => (
+                            <Tarjeta
+                                key={index}
+                                title={service.title}
+                                desc={service.desc}
+                                ico={service.img}
+                                orientation={"vertical"}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
-            <div className="services-flex">
-                <h2>Lock Repair <b>& Installation</b></h2>
-                <div className="services-cards_grid4">
-                    {services2.map((service, index) => (
-                        <Tarjeta
-                            key={index}
-                            title={service.title}
-                            desc={service.desc}
-                            ico={service.img}
-                        />
-                    ))}  
-                </div>
-            </div>
-            <div className="services-flex">
-                <h2>Home Entry <b>& Window Security</b></h2>
-                <div className="services-cards_flex3">
-                    {services3.map((service, index) => (
-                        <Tarjeta
-                            key={index}
-                            title={service.title}
-                            desc={service.desc}
-                            ico={service.img}
-                            orientation={"vertical"}
-                        />
-                    ))}
-                </div>
-            </div>
-            <div className="services-flex">
-                <h2>Keys & <b>Rekeying Services</b></h2>
-                <div className="services-cards_flex3">
-                    {services4.map((service, index) => (
-                        <Tarjeta
-                            key={index}
-                            title={service.title}
-                            desc={service.desc}
-                            ico={service.img}
-                            orientation={"vertical"}
-                        />
-                    ))}
-                </div>
-            </div>
+            <ContactSection />
         </>
     )
 }
