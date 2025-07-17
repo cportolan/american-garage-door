@@ -1,159 +1,178 @@
 /* Variables CSS */
 :root {
-  /* Colores */
-  --blue-100: #F8FAFB;
-  --blue-200: #E4F2FF;
-  --blue-300: #0B7DC3;
-  --blue-400: #28536E;
-  --blue-500: #0B2A3D;
-  --white: #FFFFFF;
-  --gray-200: #DDE6EB;
-  --gray-300: #444444;
-  --gray-400: #1C242A;
-  --yellow: #FFCC00;
-  --red-100: #FF2919;
-  --red-200: #C22222;
-  /* Tamaños y Alturas */
-  --width-global: min(90%, 1440px);
-  --height-header: 120px;
-  /* Transiciones */
-  --transition: all .1s ease-in-out;
+    /* Colores */
+    --blue-100: #f8fafb;
+    --blue-200: #e4f2ff;
+    --blue-300: #0b7dc3;
+    --blue-400: #28536e;
+    --blue-500: #0b2a3d;
+    --white: #ffffff;
+    --gray-200: #dde6eb;
+    --gray-300: #444444;
+    --gray-400: #1c242a;
+    --yellow: #ffcc00;
+    --red-100: #ff2919;
+    --red-200: #c22222;
+    /* Tamaños y Alturas */
+    --width-global: min(90%, 1440px);
+    --height-header: 120px;
+    /* Transiciones */
+    --transition: all 0.1s ease-in-out;
 }
 
 /* Reset CSS */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 body {
-  position: relative;
-  top: var(--height-header);
+    position: relative;
+    top: var(--height-header);
 }
-a, ul, li {
-  text-decoration: none;
-  list-style: none;
-  color: inherit;
+a,
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
 }
 button {
-  background: none;
-  border: none;
-  cursor: pointer;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 h1 {
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 66px;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 66px;
 }
 h2 {
-  font-size: 44px;
-  font-weight: 400;
-  line-height: 1.4;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.4;
 }
 
 /* Componentes y Estilos Predeterminados */
 
 .btn-global {
-  padding: 14px 28px;
-  border-radius: 100px;
-  cursor: pointer;
-  transition: var(--transition);
-  font-size: 16px;
-  font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .btn-primary300 {
-  background-color: var(--blue-300);
-  color: var(--white);
-  border: none;
+    background-color: var(--blue-300);
+    color: var(--white);
+    border: none;
 }
 .btn-primary300:hover {
-  background-color: var(--blue-400);
+    background-color: var(--blue-400);
 }
 .btn-primary400 {
-  background-color: var(--blue-400);
-  color: var(--white);
-  border: none;
+    background-color: var(--blue-400);
+    color: var(--white);
+    border: none;
 }
 .btn-primary400:hover {
-  background-color: var(--blue-500);
+    background-color: var(--blue-500);
 }
 .btn-secondary {
-  background-color: var(--white);
-  color: var(--blue-300);
-  border: 1px solid var(--gray-200);
+    background-color: var(--white);
+    color: var(--blue-300);
+    border: 1px solid var(--gray-200);
 }
 .btn-secondary:hover {
-  background-color: var(--blue-200);
-  border-color: var(--blue-300);
+    background-color: var(--blue-200);
+    border-color: var(--blue-300);
 }
 .btn-terciary {
-  background-color: var(--white);
-  color: var(--blue-500);
-  border: none;
+    background-color: var(--white);
+    color: var(--blue-500);
+    border: none;
 }
 .btn-terciary:hover {
-  filter: opacity(0.8);
+    filter: opacity(0.8);
 }
 .mini-title {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--red-200)
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--red-200);
 }
 .section-paragraph {
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--gray-300);
-  line-height: 1.45;      
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--gray-300);
+    line-height: 1.45;
 }
 
 .services-services {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 100px;
-  width: var(--width-global);
-  margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    width: var(--width-global);
+    margin: 100px auto;
 }
 .services-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
-.services-cards_flex {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
+.services-cards_flex2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
 }
-
 .services-cards_flex3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+}
+.services-cards_flex5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+.services-cards_flex5 > :nth-child(4),
+.services-cards_flex5 > :nth-child(5) {
+    place-items: center;
 }
 .services-cards_grid6 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  background-color: var(--blue-100);
-  border-radius: 20px;
-  padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: var(--blue-100);
+    border-radius: 20px;
+    padding: 10px 0;
+}
+.services-cards_grid5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: var(--blue-100);
+    border-radius: 20px;
+    padding: 10px 0;
 }
 .services-cards_grid4 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-  background-color: var(--blue-100);
-  border-radius: 20px;
-  padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    background-color: var(--blue-100);
+    border-radius: 20px;
+    padding: 10px 0;
 }
