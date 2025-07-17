@@ -32,7 +32,7 @@
         color: var(--white);
     }
     & p {
-        color: #FFFFFF60 !important;
+        color: #ffffff60 !important;
     }
 }
 .contacthome-title.inverted {
@@ -111,7 +111,7 @@
         border: 1px solid var(--blue-400);
         border-radius: 10px;
         padding: 15px 20px;
-        color: #FFFFFF;
+        color: #ffffff;
         font-family: "DM Sans", sans-serif;
         font-size: 16px;
     }
@@ -121,7 +121,7 @@
         border-radius: 10px;
         padding: 10px 15px;
         resize: none;
-        color: #FFFFFF;
+        color: #ffffff;
         font-family: "DM Sans", sans-serif;
         font-size: 16px;
         height: 50px;
@@ -132,7 +132,7 @@
         border: 1px solid var(--blue-400);
         border-radius: 10px;
         padding: 10px 15px;
-        color: #FFFFFF;
+        color: #ffffff;
         font-family: "DM Sans", sans-serif;
         font-size: 16px;
     }
@@ -142,8 +142,10 @@
     & select option:hover {
         background-color: var(--blue-400);
     }
-    & input::placeholder, & textarea::placeholder, & select::placeholder {
-        color: #FFFFFF60;
+    & input::placeholder,
+    & textarea::placeholder,
+    & select::placeholder {
+        color: #ffffff60;
         font-size: 16px;
         line-height: 1.5;
         font-family: "DM Sans", sans-serif;
@@ -154,12 +156,16 @@
     & label {
         color: var(--gray-300);
     }
-    & input, & textarea, & select {
+    & input,
+    & textarea,
+    & select {
         border: 1px solid var(--gray-200);
         color: var(--gray-300);
     }
-    & input::placeholder, & textarea::placeholder, & select::placeholder {
-        color: #9C9C9C;
+    & input::placeholder,
+    & textarea::placeholder,
+    & select::placeholder {
+        color: #9c9c9c;
     }
     & select {
         color: var(--gray-300);
@@ -169,5 +175,27 @@
     }
     & select option:hover {
         background-color: var(--gray-200);
+    }
+}
+@media (max-width: 1024px) {
+    .contacthome-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .contacthome-text {
+        align-items: center;
+        text-align: center;
+    }
+    .contacthome-title {
+        max-width: 100%;
+    }
+    .contacthome-form {
+        width: 100%;
+    }
+}
+@media (max-width: 650px) {
+    .form-row {
+        flex-direction: column;
     }
 }

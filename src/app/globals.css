@@ -176,3 +176,26 @@ h2 {
     border-radius: 20px;
     padding: 10px 0;
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+        line-height: 1.4;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 1.4;
+    }
+    .mini-title {
+        font-size: 14px;
+    }
+
+    .services-cards_flex3,
+    .services-cards_flex2,
+    .services-cards_flex5,
+    .services-cards_grid6,
+    .services-cards_grid5,
+    .services-cards_grid4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
