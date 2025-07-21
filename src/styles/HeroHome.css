@@ -49,13 +49,14 @@
     }
 }
 @media (max-width: 768px) {
-    .herohome-imgs {
-        gap: 12px;
-        & div {
-            gap: 12px;
-        }
+    .herohome-imgs img {
+        width: 100%;
+        height: auto;
+    }
+
+    .herohome-imgs-group {
         & img {
-            width: 100%;
+            width: calc(50% - 12px); /* 50% menos la mitad del gap para que no se desborde */
             height: auto;
         }
     }

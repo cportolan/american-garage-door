@@ -11,7 +11,7 @@ export default function HeroHome() {
                 </div>
                 <div className="herohome-imgs">
                     <img src="/imgs/hero1.png" alt="Hero Image" />
-                    <div>
+                    <div className="herohome-imgs-group">
                         <img src="/imgs/hero2.png" alt="Hero Image" />
                         <img src="/imgs/hero3.png" alt="Hero Image" />
                     </div>

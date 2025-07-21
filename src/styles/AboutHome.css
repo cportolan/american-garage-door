@@ -8,9 +8,13 @@
     align-items: center;
     justify-content: center;
     padding: 60px 0;
+    width: var(--width-global);
+    margin: auto;
+    text-align: center;
 
     & img {
         max-width: 1280px;
+        width: 100%;
         height: auto;
         border-radius: 36px;
         margin-top: 50px;
